@@ -1,0 +1,381 @@
+body {
+    Padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    
+}
+
+/*---------------------------------   Showcase   ------------------------------------*/
+
+#showcase {
+    background: url('../security-about.jpg') no-repeat;
+    background-size: cover;
+    min-height: 700px;
+    text-align: center;   
+    width: 100%;    
+}
+
+
+/*-----------------------------------------    global      --------------------------------------*/
+/* positions security logo the left top corner */
+.logo img {
+    float: left;
+    padding: 10px;
+}
+
+/* references the background that the navigation resides at */
+header {
+    background: darkslateblue;   
+    padding-top: 10px;
+    min-height: 40px;
+    border-bottom: white 3px solid;    
+}
+
+/*targets the  Navigation menu */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* targets the navigation menu hover and the current navigation page that is opened. */
+ul .current a {
+    color: crimson;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+                                                  
+header li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+
+/* --------------------------------- flexbox used for the two contents under the navigation menu  -----------------*/
+.security-container {
+    display: flex;
+    justify-content: space-around;
+    
+    }
+    
+    .security-item {
+    width: 500px;
+    
+    }
+    
+    .security-item-1 {
+        min-height: 300px;
+        /* margin-left: 70px; */
+        color: white;
+        font-size: 30px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    
+    .security-item-2 {
+        margin-top: 45px;
+        min-height: 300px;
+        color: white;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;  
+    }
+    
+    
+    /* changes the size of the phone number in top right corner */
+    .security-item-2 p {
+        font-size: 20px;
+    }
+
+    .highlight-address {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    /* .space {
+        margin-top: 10px;
+    } */
+
+    /*  ------------------------------- properties for the hamburger menu  --------------------------------------------------------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: #26272c;
+    width: 250px;
+    height: 100%;
+    transition: .3s;
+    }
+
+    .pro {
+        background: url(../james_about_img.png);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .sidebar ul {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .sidebar li{
+        list-style: none;
+    }
+
+    .sidebar a {
+        padding: 10px 20px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0.2);
+        font-size: 22px;
+    }
+
+    .sidebar a:hover {
+        background: gray;
+    }
+
+    .sidebar-Btn {
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background: crimson;
+        border: none;
+        outline: none;        
+    }
+
+    .sidebar-Btn span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 24px;
+        transition: .3s;
+    }
+
+    .sidebar-Btn span:before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        transform: .3s;
+    }
+
+    .sidebar-Btn span:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        transform: .3s;
+    }
+
+    .active {
+        right: 0;
+    }
+
+    .sidebar-Btn.toggle span {
+        background: transparent;
+    }
+
+    .sidebar-Btn.toggle span:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .sidebar-Btn.toggle span:after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    /*  ------------------------------------------------------- end of the hamburger  menu   ---------------------------------------------- */
+
+/* ---------------------------------  reference payment statement in the center.  ------------------------------------ */
+    .payment-option {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 30px;
+    }
+    
+
+    /*  -----------------------------------------  footer ----------------------------------*/
+
+.footer-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.single-footer {
+    width: 33%;
+    float: left;
+    color: #fff;
+    
+} 
+
+.single-footer ul {
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+    list-style: none;   
+}
+
+.single-footer ul a {       
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.single-footer p {
+    width: 70%;
+    font-weight: bold;
+}
+
+.single-footer h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align:left;
+}
+
+footer  {
+    width: 100%;
+    height: 200px;   
+    margin-top: 30px;
+    bottom: 0;
+    z-index: -1;
+    color: #ffffff;
+    background-color: darkslateblue;
+}
+
+
+/* facebook image and developer information */
+
+.facebook img {
+    margin-top: 20px;   
+}
+
+.developer p {
+    margin-top: -2px;
+    padding-bottom: 10px;
+
+}
+
+ 
+/*  -------------------------------------------------end of footer  ---------------------------------------------- */
+
+
+
+/*    ------------------------------------------------------------Media Queries   ----------------------------------------------
+    ----------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------*/
+
+    @media(max-width: 768px) {
+
+        #showcase, 
+        .logo img,
+        header,
+        header a,
+        header li,
+        .security-container,
+        .security-item,
+        .security-item-1,
+        .space,
+        .footer-wrapper,
+        .single-footer,
+        .single-footer ul,
+        .single-footer p,
+        footer,
+        .facebook-img,
+        .developer p
+        {
+            list-style: none;
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        #showcase {
+            background: url('../security-about.jpg') no-repeat -300px 0;           
+        }
+    
+        footer {
+            position: inherit;
+            padding-top: 10px;
+        }
+
+        .single-footer h2 {
+            text-align: center;
+        }
+
+        .footer-wrapper {
+            background-color: darkslateblue;
+        }
+
+        .logo img {
+            display: none;
+        }
+
+        .security-item-2 {
+            display: none;
+        }
+
+         /* properties below utilized for not scrolling on x- axis for a more stable page. */
+         #showcase {
+            margin: auto;
+            overflow: hidden;
+        }
+
+         /* minimizes the size of the main heading for mobile devices. */
+         .security-item-1 h1 {
+            font-size: inherit;
+        }
+
+        header li {
+            display: inline;
+        }
+
+        header li a {
+            font-size: small;
+        } 
+
+        /* moves hamburger menu to the left and with a smaller width */
+        .sidebar-Btn {
+            left: -40px;
+            width: 35px;
+        }
+        
+        /* decreases the size of the hamburger menu elements */
+        .sidebar-Btn span, span:before, span:after {
+            width: 25px;
+
+        }
+    }
+    

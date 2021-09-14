@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Fifty-Fifty-Security">
+        <meta name="author" content="Terrance Boone">
+        <title>Fifty-Fifty-Security| Pay Invoice</title> <!--Top of page-->
+        <link href="payinvoice.css" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+
+    <body>
+        <section id="showcase">
+       
+            <header>
+                <div class ="logo"><img src ="images/security-logo.png"  style ="width: 80px; height: 50px;"> </div>
+                <!-- Navigation menu -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li class = "current"><a href="payinvoice.html">Pay Invoice</a></li>   
+                        <li><a href="contact.html">Contact</a></li>
+
+
+                    </ul>
+                </nav>  
+              
+            </header>
+            <div class = "security-container">
+                <div class = "security-item security-item-1">
+                <h1><span class="highlight">Fifty Fifty Security</span> Company, LLC </h1>
+                </div>
+
+                <div class = "security-item security-item-2">
+                    <p> <img src ="images/phone.png" style ="width: 50px; height: 40px;">  (803)-351-2942<br>
+                       <span class = "highlight-address">Address:</span> 108 Southbrook Drive<br>
+                        Lexington, SC 29073
+                    </p>                
+                </div>
+
+                         <!-------------------------  Hamburger Menu  --------------------------------->
+                <div class = "sidebar">
+                    <div class = "pro"> </div> 
+                    <h2>Menu</h2> 
+                    <hr>
+                        <ul>
+                            <li><a href = "index.html"><i class  = "fa fa-home"></i>Home</a></li>
+                            <li><a href = "about.html"><i class  = "fa fa-user"></i>About</a></li>
+                            <li><a href = "services.html"><i class  = "fa fa-dashboard"></i>Services</a></li>
+                            <li><a href = "payinvoice.html"><i class  = "fa fa-newspaper-o"></i>Pay Invoice</a></li>
+                            <li><a href = "contact.html"><i class  = "fa fa-envelope"></i>Contact</a></li>
+                        </ul>  
+                        <button class="sidebar-Btn">
+                            <span></span>
+                        </button>
+                </div>
+
+                                    <!--------------------------    JQuery      ------------------->
+                <script>
+                    $('.sidebar-Btn').click(function() {
+                        $('.sidebar').toggleClass('active');
+                        $('.sidebar-Btn').toggleClass('toggle');
+                    })
+                </script>
+            </div>         
+         </section>
+
+         <div class="payment-option">
+             <p>Please contact  us by phone or by submitting a question regarding payments.</p>
+             <img src="images/check-img.png" style ="width: 80px; height: 50px;">
+         </div>
+
+         <!-- <div class = "space"></div> -->
+
+         <footer>
+            <div class = "footer-wrapper">
+                <div class = "single-footer">
+                    <p>Fifty Fifty Security Company, LLC Copyright @ 2020<br>
+                    James Wilson - Owner<br>
+                    134 Clubhouse Drive<br>
+                    West Columbia, SC 29172<br>
+                    Phone: 803-351-2942<br>
+                    fifty50standingtall@gmail.com</p> 
+                  </div>        
+         
+                  <div class = "single-footer">
+                              <h2>Navigation</h2>
+                          <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="payinvoice.html">Pay Invoice</a></li>   
+                            <li><a href="contact.html">Contact</a></li>
+                          </ul> 
+                  </div>
+
+                  <div class = "facebook">
+                    <a href="https://www.facebook.com/profile.php?id=100053400990318&sk=about"> <img src ="images/imgfacebook.png"  style ="width: 80px; height: 30px;"> </a> 
+                </div>
+                <div class = "developer">
+                    <p>Design and developed by Terrance Boone </p>
+                </div>
+          </div>
+
+      </footer>
+
+
+  </body>
+</html>

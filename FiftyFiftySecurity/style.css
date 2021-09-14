@@ -1,0 +1,603 @@
+
+body {
+    Padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    
+}
+
+
+
+
+/*---------------------------------   Showcase   ------------------------------------*/
+
+#showcase {
+    background: url('../usaflag.png') no-repeat;
+    background-size: cover;
+    max-height: 600px;
+    text-align: center;   
+    width: 100%; 
+    height: 100vh;   
+    background-position: center;
+}
+
+
+/*-----------------------------------------    global      --------------------------------------*/
+/* positions security logo the left top corner */
+.logo img {
+    float: left;
+    padding: 10px;
+}
+
+/* references the background that the navigation resides at */
+header {
+    background: darkslateblue;   
+    padding-top: 10px;
+    min-height: 40px;
+    border-bottom: white 3px solid;    
+}
+
+/*targets the  Navigation menu */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* targets the navigation menu hover and the current navigation page that is opened. */
+ul .current a {
+    color: crimson;
+    font-weight: bold;
+}
+
+/* targets the navigation menu */
+/* a:hover {
+
+    background: red;
+    transition: 0.2s;
+} */
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.2s;
+}
+/* header ul {
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+
+header li {
+    display: inline-block;
+    padding: 0 20px 0 20px;
+}
+
+
+/* flexbox used for the two contents under the navigation menu */
+.security-container {
+display: flex;
+justify-content: space-around;
+
+}
+
+.security-item {
+width: 500px;
+
+}
+
+.security-item-1 {
+    min-height: 300px;
+    /* margin-left: 70px; */
+    color: white;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.security-item-2 {
+    margin-top: 25px;
+    min-height: 300px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+
+/* changes the size of the phone number in top right corner */
+.security-item-2 p {
+    font-size: 20px;
+}
+
+/* targets the word address in the showcase */
+.highlight-address {
+    color: navy;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*  ------------------------------- properties for the hamburger menu  --------------------------------------------------------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    background: #26272c;
+    width: 250px;
+    height: 100%;
+    transition: .3s;
+    }
+
+    .pro {
+        background: url(../james_about_img.png);
+        background-size: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    .sidebar ul {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .sidebar li{
+        list-style: none;
+    }
+
+    .sidebar a {
+        padding: 10px 20px;
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0,0,0.2);
+        font-size: 22px;
+    }
+
+    .sidebar a:hover {
+        background: gray;
+    }
+
+    .sidebar-Btn {
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        width: 50px;
+        height: 50px;
+        box-sizing: border-box;
+        cursor: pointer;
+        background: crimson;
+        border: none;
+        outline: none;        
+    }
+
+    .sidebar-Btn span {
+        display: block;
+        width: 35px;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 24px;
+        transition: .3s;
+    }
+
+    .sidebar-Btn span:before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: -10px;                                                                                                                                                                                                                                                                                                                                             
+        right: 0;
+        transform: .3s;
+    }
+
+    .sidebar-Btn span:after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: #fff;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        transform: .3s;
+    }
+
+    .active {
+        right: 0;
+    
+    }
+
+    .sidebar-Btn.toggle span {
+        background: transparent;
+    }
+
+    .sidebar-Btn.toggle span:before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .sidebar-Btn.toggle span:after {
+        top: 30px;
+        transform: rotate(45deg);
+    }
+    /*  ------------------------------------------------------- end of the hamburger  menu   ---------------------------------------------- */
+
+
+
+.transparent {
+    margin: 0 auto;
+    max-width: 700px;
+    padding: 20px 40px 20px 40px;
+    background: rgba(255,255,255,.6);
+    box-shadow: 0 5px 15px rgba(5,10,18,black);
+}
+
+/*targets the statement above the button*/
+.transparent p {
+    font-size: 20px;    
+    padding-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border-bottom: 2px white solid;
+}
+
+/* targets the anchor tag */
+.transparent a {  
+    color: black;
+    font-size: 15px;
+    text-decoration: none;   
+   
+}
+
+.transparent a:hover {
+    background-color: darkgray;
+    transition: 0.7s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Add space around the button */
+.transparent button {                
+    padding: 5px 10px 5px 10px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgba(255,255,255,.4);
+    border: none;
+   
+    
+}
+
+/* targets the blue area */
+.services-offered{
+    display: grid;
+    justify-content: center;    
+    color: red;   
+    margin-top: 20px;
+    margin-bottom: -50px;    
+    min-height: 350px;
+    width: 100%;
+}
+
+.services-offered h2 {
+   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+
+.services-offered p {    
+    max-width: 480px;
+    margin: 0;
+    color: black;
+}
+
+.services-offered a {
+    color: red;
+}
+
+.services-offered ul {
+    color: red;
+    padding-bottom: 15px;
+}
+
+/* section with james photo */
+.hours-offered{   
+    background-color: royalblue;
+    min-height: 410px;
+    max-height: 420px;
+    width: 100%; 
+    margin: 0 auto;
+}
+
+
+/* targets james photo */
+.hours-offered img {
+    float: right;
+    margin: 10px;
+}
+
+.hours-offered h3 {
+    /* use css grid properties below( display: grid and justif-content to center element ) */
+    display: grid;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 20%;
+    color: white;    
+    font-family: papyrus;
+    font-size: 40px;
+}
+    
+    
+
+/* References Hours of operation statement */
+.hours-offered h4 {
+   
+    /* moves the tag to the left below to give padding between body and element  */
+    padding-left: 20%;
+    color: white;
+    font-family: papyrus;
+    font-size: 25px;
+    margin-top: -10px;
+    /* uses the text- align property to center the content. */
+    text-align: center;
+}
+
+.contact-btn {    
+    display: block;
+    font-size: normal;
+    padding: 15px 20px 0 20px;
+    width: 80px;
+    height: 40px;
+    /* uses margin to move the entire class or button to the left below */
+    margin-left: 45%;
+    border: 3px white solid;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+.contact-btn a:hover {
+    color: red;
+}
+
+/*---------------------------------------- security officer request area ---------------------------------------- */
+.security-request  {
+    display: grid;
+    justify-content: center; 
+}
+.security-request h1 {
+    color: red;
+    font-size: 2rem;
+    padding-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+.div-request-one {
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 1.1rem;
+ margin-top: -10px;
+}
+
+.security-request ul {
+    color: red;
+}
+
+.div-request-two {
+    max-width: 450px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+
+
+.space {
+    margin-top: 210px;
+}
+
+/*  -----------------------------------------  footer ----------------------------------*/
+
+.footer-wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.single-footer {
+    width: 33%;
+    float: left;
+    color: #fff;
+    
+} 
+
+.single-footer ul {
+    margin: 0;
+    margin-top: -15px;
+    padding: 0;
+    list-style: none;   
+}
+
+.single-footer ul a {       
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.single-footer p {
+    width: 70%;
+    font-weight: bold;
+}
+
+.single-footer h2 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align:left;
+}
+
+footer  {
+    width: 100%;
+    height: 200px;
+    /*  ----------------------property below allows the footer tag to stay in position at bottom of page as user scroll up or down. ----------------------*/
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    color: #ffffff;
+    background-color: darkslateblue;    
+    
+}
+
+
+/* facebook image and developer information */
+
+.facebook img {
+    margin-top: 20px;   
+}
+
+.developer p {
+    margin-top: -2px;
+    padding-bottom: 10px;
+}
+
+ 
+/*  -------------------------------------------------end of footer  ---------------------------------------------- */
+
+
+
+/*    ------------------------------------------------------------Media Queries   ----------------------------------------------
+    ----------------------------------------------------------------------------------------------------------------------------
+    -------------------------------------------------------------------------------------------------------------------------*/
+
+    @media(max-width: 768px) {
+
+        #showcase, 
+        .logo img,
+        header,
+        header a,
+        header li,
+        .security-container,
+        .security-item,
+        .security-item-1,
+        .transparent,
+        .transparent p,
+        .transparent button,
+        .services-offered,
+        .services-offered p,
+        .services-offered ul,
+        .hours-offered,
+        .hours-offered img,
+        .hours-offered h3,
+        .hours-offered h4,
+        .contact-btn,
+        .contact-btn a,
+        .security-request,
+        .security-request h1,
+        .security-request ul,
+        .div-request-one,
+        .div-request-two,
+        .space,
+        .footer-wrapper,
+        .single-footer,
+        .single-footer ul,
+        .single-footer p,
+        .facebook-img,
+        .developer p
+        {
+            list-style: none;
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        footer {
+            position: inherit;
+            padding-top: 10px;
+        }
+
+        .single-footer h2 {
+            text-align: center;
+        }
+
+        .footer-wrapper {
+            background-color: darkslateblue;
+        }
+
+        .logo img {
+            display: none;
+        }
+
+        .security-item-2 {
+            display: none;
+        }
+
+        .hours-offered  {
+            padding-top: 10px;
+            background-color: white;
+        }    
+        
+        #showcase, .hours-offered, .security-request {
+            width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .transparent, .hours-sec-one {
+             width: 100%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+         /* minimizes the size of the main heading for mobile devices. */
+         .security-item-1 h1 {
+            font-size: inherit;
+        }
+
+        header li {
+            display: inline;
+        }
+
+        header li a {
+            font-size: small;
+        } 
+       
+        /* moves hamburger menu to the left and with a smaller width */
+        .sidebar-Btn {
+            left: -80px;
+            width: 35px;
+        }
+        
+        /* decreases the size of the hamburger menu elements */
+        .sidebar-Btn span, span:before, span:after {
+            width: 25px;
+
+        }
+
+        /* laptops and small desktops  */
+@media (min-width: 1301px) and (max-width: 1600px) {
+
+}
+
+
+/* large desktops */
+@media (min-width: 1601px) and (max-width: 3000px) {
+
+    #showcase {
+        width: 120%;
+    }
+
+    }     
+ }
+    
